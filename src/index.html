@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": ""
+    })
+</head>
+
+<body>
+
+
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../.."
+        })
+
+        @@include('./dashboard/_sidenav.html', {
+            "path": "../..",
+            "page": "overview",
+            "page_group": "dashboard"
+        })
+    
+        <main class="content">
+
+            @@include('./dashboard/_topbar.html', {
+                "path": "../.."
+            })
+
+            @@include('./dashboard/_main.html', {
+                "path": "../..",
+                "classes": "text-dark"
+            })
+        </main> 
+        <footer class="content">  
+            @@include('./dashboard/_footer.html', {
+                "path": "../..",
+                "classes": "text-dark"
+            })
+        </footer> 
+
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+    
+</body>
+
+</html>
